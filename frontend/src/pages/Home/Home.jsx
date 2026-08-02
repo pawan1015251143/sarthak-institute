@@ -52,7 +52,7 @@ const Home = () => {
           <span className="text-xs font-extrabold tracking-widest text-primary-600 dark:text-primary-400 uppercase">
             WHY CHOOSE US
           </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mt-2">
+          <h2 className="text-3xl sm:text-5xl font-serif font-extrabold text-slate-900 dark:text-white mt-2">
             Built on Rigor, Mentored by Experts
           </h2>
           <p className="text-slate-600 dark:text-slate-300 mt-4 text-sm sm:text-base">
@@ -89,7 +89,7 @@ const Home = () => {
             <span className="text-xs font-extrabold tracking-widest text-primary-600 dark:text-primary-400 uppercase">
               COURSES OFFERED
             </span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mt-2">
+            <h2 className="text-3xl sm:text-5xl font-serif font-extrabold text-slate-900 dark:text-white mt-2">
               Structured Batches for Every Academic Goal
             </h2>
           </div>
@@ -140,7 +140,7 @@ const Home = () => {
                 <span className="text-xs font-extrabold tracking-widest text-primary-600 dark:text-primary-400 uppercase">
                   FOUNDER &amp; MENTORSHIP
                 </span>
-                <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mt-2">
+                <h2 className="text-3xl sm:text-5xl font-serif font-extrabold text-slate-900 dark:text-white mt-2">
                   Rakesh Yadav Sir — Ek Hi Sir Jo Banate Hain Concept Aasan
                 </h2>
                 <div className="text-sm font-semibold text-secondary-600 dark:text-secondary-400 mt-1">
@@ -190,7 +190,7 @@ const Home = () => {
           <span className="text-xs font-extrabold tracking-widest text-primary-600 dark:text-primary-400 uppercase">
             STUDENT ACHIEVEMENTS
           </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mt-2">
+          <h2 className="text-3xl sm:text-5xl font-serif font-extrabold text-slate-900 dark:text-white mt-2">
             Hear From Our Board &amp; Competitive Toppers
           </h2>
           <p className="text-slate-600 dark:text-slate-300 mt-3 text-sm sm:text-base">
@@ -245,7 +245,7 @@ const Home = () => {
             <span className="text-xs font-extrabold tracking-widest text-primary-600 dark:text-primary-400 uppercase">
               CAMPUS GALLERY
             </span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mt-2">
+            <h2 className="text-3xl sm:text-5xl font-serif font-extrabold text-slate-900 dark:text-white mt-2">
               Life inside Sarthak Institute
             </h2>
           </div>
@@ -290,7 +290,7 @@ const Home = () => {
                 <Bell className="w-5 h-5 animate-bounce" />
               </div>
               <div>
-                <h3 className="text-2xl font-extrabold text-slate-900 dark:text-white">
+                <h3 className="text-2xl sm:text-3xl font-serif font-extrabold text-slate-900 dark:text-white">
                   Institute Notice Board
                 </h3>
                 <p className="text-xs text-slate-500">
@@ -338,7 +338,7 @@ const Home = () => {
               <span className="text-xs font-extrabold tracking-widest text-secondary-300 uppercase">
                 ENROLL FOR ACADEMIC SESSION 2026–27
               </span>
-              <h2 className="text-3xl sm:text-4xl font-extrabold leading-tight">
+              <h2 className="text-3xl sm:text-5xl font-serif font-extrabold leading-tight">
                 Ready to Secure Your Seat at Sarthak Institute?
               </h2>
               <p className="text-slate-200 text-sm sm:text-base max-w-xl">

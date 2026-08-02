@@ -78,10 +78,10 @@ const Navbar = () => {
             </div>
             <div>
               <div className="flex items-center gap-1.5">
-                <span className="text-xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+                <span className="text-2xl font-serif font-black tracking-tight text-slate-900 dark:text-white">
                   Sarthak
                 </span>
-                <span className="text-xl font-extrabold tracking-tight text-primary-600 dark:text-primary-400">
+                <span className="text-2xl font-serif font-black tracking-tight text-primary-600 dark:text-primary-400">
                   Institute
                 </span>
               </div>

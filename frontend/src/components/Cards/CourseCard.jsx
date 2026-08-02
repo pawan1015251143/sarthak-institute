@@ -47,7 +47,7 @@ const CourseCard = ({ course, onAdmissionClick }) => {
             <span className="text-xs font-extrabold text-primary-600 dark:text-primary-400 uppercase tracking-wider block">
               {course.classLevel} • {course.stream}
             </span>
-            <h3 className="text-lg font-bold text-slate-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
+            <h3 className="text-xl font-serif font-extrabold text-slate-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
               {course.title}
             </h3>
           </div>

@@ -27,7 +27,7 @@ const Hero = () => {
               <span>Admissions Open for Session 2026–27 • Bihar Board 10th | 11th-12th (Phy &amp; Che)</span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-serif font-extrabold tracking-tight leading-[1.1] text-slate-900 dark:text-white">
               Sarthak Institute:{' '}
               <span className="bg-gradient-to-r from-primary-600 via-indigo-600 to-secondary-500 bg-clip-text text-transparent">
                 Rakesh Sir

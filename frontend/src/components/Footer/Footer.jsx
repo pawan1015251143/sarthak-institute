@@ -30,7 +30,7 @@ const Footer = () => {
                 <GraduationCap className="w-6 h-6" />
               </div>
               <div>
-                <span className="text-xl font-extrabold tracking-tight text-white">
+                <span className="text-2xl font-serif font-black tracking-tight text-white">
                   {INSTITUTE_NAME}
                 </span>
                 <span className="text-xs block font-bold tracking-widest text-secondary-400 uppercase">

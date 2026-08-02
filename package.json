@@ -1,0 +1,23 @@
+{
+  "name": "sarthak-institute-coaching-system",
+  "version": "1.0.0",
+  "description": "Sarthak Institute Coaching Institute Management System (Full-Stack React + Node.js + MySQL)",
+  "private": true,
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "install:all": "npm --prefix backend install && npm --prefix frontend install"
+  },
+  "keywords": [
+    "sarthak-institute",
+    "coaching-management",
+    "react",
+    "vite",
+    "node",
+    "express",
+    "mysql"
+  ],
+  "author": "Sarthak Institute",
+  "license": "MIT"
+}

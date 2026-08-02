@@ -1,0 +1,33 @@
+@import '../index.css';
+
+/* Micro-animations and custom effects */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 3s ease-in-out infinite;
+}
+
+/* Glassmorphism Sidebar */
+.sidebar-glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  border-right: 1px solid rgba(226, 232, 240, 0.7);
+}
+
+.dark .sidebar-glass {
+  background: rgba(15, 23, 42, 0.9);
+  backdrop-filter: blur(16px);
+  border-right: 1px solid rgba(30, 41, 59, 0.8);
+}

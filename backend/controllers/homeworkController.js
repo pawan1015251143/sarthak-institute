@@ -17,7 +17,7 @@ let mockHomeworks = [
     dueDate: '04 Aug 2026',
     status: 'Completed',
     desc: 'Complete derivatives of composite and parametric functions.',
-    assignedBy: 'Rakesh Sharma (Rakesh Sir)',
+    assignedBy: 'Rakesh Sir',
   },
   {
     id: 3,

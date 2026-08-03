@@ -3,7 +3,7 @@ import { MessageCircle, Phone } from 'lucide-react';
 
 const WhatsAppWidget = () => {
   const whatsappNumber = "919006859138";
-  const defaultMessage = encodeURIComponent("Hello Rakesh Yadav Sir, I want to enquire about admission in Sarthak Institute.");
+  const defaultMessage = encodeURIComponent("Hello Rakesh Sir, I want to enquire about admission in Sarthak Institute.");
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${defaultMessage}`;
 
   return (

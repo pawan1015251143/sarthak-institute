@@ -141,7 +141,7 @@ const Home = () => {
                   FOUNDER &amp; MENTORSHIP
                 </span>
                 <h2 className="text-3xl sm:text-5xl font-serif font-extrabold text-slate-900 dark:text-white mt-2">
-                  Rakesh Yadav Sir — Ek Hi Sir Jo Banate Hain Concept Aasan
+                  Rakesh Sir — Ek Hi Sir Jo Banate Hain Concept Aasan
                 </h2>
                 <div className="text-sm font-semibold text-secondary-600 dark:text-secondary-400 mt-1">
                   {FACULTY_LEAD.qualification} • {FACULTY_LEAD.experience}

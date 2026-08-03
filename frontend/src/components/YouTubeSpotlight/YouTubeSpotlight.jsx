@@ -61,7 +61,7 @@ const YouTubeSpotlight = () => {
                 Sarthak Institute (@sarthakinstitute6303)
               </h2>
               <p className="text-sm text-slate-400 mt-1">
-                Rakesh Yadav Sir dwara 10th Bihar Board (All Subjects) w 11th-12th (Physics &amp; Chemistry) ke Free Video Lectures
+                Rakesh Sir dwara 10th Bihar Board (All Subjects) w 11th-12th (Physics &amp; Chemistry) ke Free Video Lectures
               </p>
             </div>
           </div>
@@ -141,7 +141,7 @@ const YouTubeSpotlight = () => {
         <div className="space-y-4">
           <div className="flex items-center justify-between">
             <h3 className="text-lg font-bold text-white">
-              Popular Video Lectures by Rakesh Yadav Sir (10th All Subjects | 11th-12th Phy &amp; Che)
+              Popular Video Lectures by Rakesh Sir (10th All Subjects | 11th-12th Phy &amp; Che)
             </h3>
             <a
               href={channelUrl}
@@ -186,7 +186,7 @@ const YouTubeSpotlight = () => {
                     {video.title}
                   </h4>
                   <div className="text-xs text-slate-400">
-                    {video.views} • Rakesh Yadav Sir
+                    {video.views} • Rakesh Sir
                   </div>
                 </div>
               </a>

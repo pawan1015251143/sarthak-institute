@@ -25,8 +25,8 @@ const mockDatabaseStore = {
     {
       id: 1,
       student_id: 'ADMIN_RAKESH',
-      name: 'Rakesh Sharma',
-      email: 'rakesh.sharma@sarthakinstitute.edu.in',
+      name: 'Rakesh Sir',
+      email: 'rakesh.sir@sarthakinstitute.edu.in',
       phone: '+91 98765 43210',
       password_hash: '$2a$10$wE9K.pS.bJ8zVq9L1K.0uO8e/7.m1B2x3D4E5F6G7H8I9J0K1L2M3', // admin123
       role: 'ADMIN',

@@ -27,7 +27,7 @@ const seedDatabase = async () => {
     const adminPassHash = await bcrypt.hash('admin123', 10);
     await connection.query(
       `INSERT IGNORE INTO users (student_id, name, email, phone, password_hash, role, class_level, stream, profile_completed, can_edit_once)
-       VALUES ('ADMIN_RAKESH', 'Rakesh Sharma', 'rakesh.sharma@sarthakinstitute.edu.in', '+91 98765 43210', ?, 'ADMIN', 'All Classes', 'Management', true, true)`,
+       VALUES ('ADMIN_RAKESH', 'Rakesh Sir', 'rakesh.sir@sarthakinstitute.edu.in', '+91 98765 43210', ?, 'ADMIN', 'All Classes', 'Management', true, true)`,
       [adminPassHash]
     );
 
@@ -39,7 +39,7 @@ const seedDatabase = async () => {
       [studentPassHash]
     );
 
-    console.log('✅ Seeded demo Admin (`rakesh.sharma@sarthakinstitute.edu.in` / `admin123`) & Student (`arjun.verma@example.com` / `password123`).');
+    console.log('✅ Seeded demo Admin (`rakesh.sir@sarthakinstitute.edu.in` / `admin123`) & Student (`arjun.verma@example.com` / `password123`).');
     console.log('🎉 Database seeding completed successfully.');
   } catch (err) {
     console.warn('⚠️ [Seeder] MySQL connection not available locally:', err.message);

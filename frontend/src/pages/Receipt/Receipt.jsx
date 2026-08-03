@@ -263,7 +263,7 @@ const Receipt = () => {
           <div>
             <div className="h-16 flex items-end justify-center pb-2">
               <span className="font-signature text-2xl italic font-bold text-primary-800 dark:text-primary-300">
-                Rakesh Yadav Sir
+                Rakesh Sir
               </span>
             </div>
             <div className="border-t-2 border-slate-400 dark:border-slate-600 pt-2 text-xs font-bold text-slate-700 dark:text-slate-300">

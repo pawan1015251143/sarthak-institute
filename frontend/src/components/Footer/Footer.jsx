@@ -211,7 +211,7 @@ const Footer = () => {
             <div className="flex items-center gap-3 text-sm">
               <MessageCircle className="w-5 h-5 text-emerald-400 shrink-0" />
               <a
-                href="https://wa.me/919006859138?text=Hello%20Rakesh%20Yadav%20Sir"
+                href="https://wa.me/919006859138?text=Hello%20Rakesh%20Sir"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-emerald-400 font-bold hover:underline"

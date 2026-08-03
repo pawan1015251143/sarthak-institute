@@ -1,5 +1,5 @@
 export const INSTITUTE_NAME = "Sarthak Institute";
-export const INSTITUTE_TAGLINE = "Bihar Board 10th (All Subjects) aur 11th - 12th (Physics & Chemistry) — By Rakesh Yadav Sir";
+export const INSTITUTE_TAGLINE = "Bihar Board 10th (All Subjects) aur 11th - 12th (Physics & Chemistry) — By Rakesh Sir";
 export const INSTITUTE_PHONE = "+91 9006859138";
 export const INSTITUTE_WHATSAPP = "9006859138";
 export const INSTITUTE_EMAIL = "contact@sarthakinstitute.edu.in";
@@ -14,7 +14,7 @@ export const COURSES_DATA = [
     stream: "General",
     duration: "1 Year (April - March)",
     subjects: ["Mathematics", "Science", "Social Science", "Hindi", "English", "Sanskrit"],
-    faculty: ["Rakesh Yadav Sir (Sole Expert Faculty)"],
+    faculty: ["Rakesh Sir (Sole Expert Faculty)"],
     description: "Bihar Board 10th Class ke sabhi subjects (All Subjects) ki behtareen aur aasan taiyari. Har chapter ke simple notes, objective questions practice aur weekly test.",
     feeMonthly: 1500,
     feeYearly: 15000,
@@ -29,7 +29,7 @@ export const COURSES_DATA = [
     stream: "Science",
     duration: "1 Year (April - March)",
     subjects: ["Physics", "Chemistry"],
-    faculty: ["Rakesh Yadav Sir (Physics & Chemistry)"],
+    faculty: ["Rakesh Sir (Physics & Chemistry)"],
     description: "11th Science stream ke liye Physics aur Chemistry ki deep conceptual padhai. Numericals aur theory ko aasan examples ke saath samjhe.",
     feeMonthly: 2000,
     feeYearly: 20000,
@@ -44,7 +44,7 @@ export const COURSES_DATA = [
     stream: "Science",
     duration: "1 Year (April - March)",
     subjects: ["Physics", "Chemistry"],
-    faculty: ["Rakesh Yadav Sir (Physics & Chemistry)"],
+    faculty: ["Rakesh Sir (Physics & Chemistry)"],
     description: "12th Board exams me Physics aur Chemistry me 95%+ marks ke liye special strategy, VVI objectives practice aur handwritten notes.",
     feeMonthly: 2500,
     feeYearly: 25000,
@@ -55,11 +55,11 @@ export const COURSES_DATA = [
 ];
 
 export const FACULTY_LEAD = {
-  name: "Rakesh Yadav Sir",
+  name: "Rakesh Sir",
   role: "Founder & Sole Faculty — 10th All Subjects | 11th-12th Phy & Che",
   experience: "15+ Years Teaching Experience",
   qualification: "M.Sc. (Physics & Chemistry), B.Ed.",
-  bio: "Rakesh Yadav Sir apne simple aur practical padhane ke tareeke ke liye jaane jaate hain. 10th Bihar Board ke sabhi subjects (All Subjects) aur 11th-12th ke Physics & Chemistry ko ratne ke bajay concept se samjhate hain. YouTube channel (@sarthakinstitute6303) par 25 Lakh+ views aur 5.31K+ students jude hue hain.",
+  bio: "Rakesh Sir apne simple aur practical padhane ke tareeke ke liye jaane jaate hain. 10th Bihar Board ke sabhi subjects (All Subjects) aur 11th-12th ke Physics & Chemistry ko ratne ke bajay concept se samjhate hain. YouTube channel (@sarthakinstitute6303) par 25 Lakh+ views aur 5.31K+ students jude hue hain.",
   stats: [
     { label: "YouTube Views", value: "25 Lakh+" },
     { label: "Subscribers", value: "5.31K+" },
@@ -231,7 +231,7 @@ export const SAMPLE_NOTES = [
     uploadDate: "2026-07-10",
     fileSize: "2.4 MB",
     pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
-    uploadedBy: "Rakesh Yadav Sir",
+    uploadedBy: "Rakesh Sir",
   },
   {
     id: "note-2",
@@ -242,7 +242,7 @@ export const SAMPLE_NOTES = [
     uploadDate: "2026-07-14",
     fileSize: "3.1 MB",
     pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
-    uploadedBy: "Rakesh Yadav Sir",
+    uploadedBy: "Rakesh Sir",
   },
   {
     id: "note-3",
@@ -253,7 +253,7 @@ export const SAMPLE_NOTES = [
     uploadDate: "2026-07-12",
     fileSize: "1.9 MB",
     pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
-    uploadedBy: "Rakesh Yadav Sir",
+    uploadedBy: "Rakesh Sir",
   },
   {
     id: "note-4",
@@ -264,7 +264,7 @@ export const SAMPLE_NOTES = [
     uploadDate: "2026-07-15",
     fileSize: "2.8 MB",
     pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
-    uploadedBy: "Rakesh Yadav Sir",
+    uploadedBy: "Rakesh Sir",
   },
   {
     id: "note-5",
@@ -275,7 +275,7 @@ export const SAMPLE_NOTES = [
     uploadDate: "2026-07-18",
     fileSize: "3.5 MB",
     pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
-    uploadedBy: "Rakesh Yadav Sir",
+    uploadedBy: "Rakesh Sir",
   },
 ];
 

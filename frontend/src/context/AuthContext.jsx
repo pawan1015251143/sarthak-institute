@@ -49,7 +49,7 @@ export const AuthProvider = ({ children }) => {
 
   const adminLogin = async (email, password) => {
     const adminUser = {
-      name: "Rakesh Yadav Sir (Admin)",
+      name: "Rakesh Sir (Admin)",
       email: email,
       role: "ADMIN",
     };

@@ -24,7 +24,7 @@ const DemoExplorer = () => {
   const handleInstantAdminLogin = () => {
     logout();
     login(
-      { email: 'rakesh.yadav@sarthakinstitute.edu.in', password: 'admin123', role: 'ADMIN' },
+      { email: 'rakesh.sir@sarthakinstitute.edu.in', password: 'admin123', role: 'ADMIN' },
       () => {
         setIsOpen(false);
         navigate('/admin');

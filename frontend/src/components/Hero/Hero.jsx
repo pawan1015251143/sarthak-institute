@@ -46,7 +46,7 @@ const Hero = () => {
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <a
-                href="https://wa.me/919006859138?text=Hello%20Rakesh%20Yadav%20Sir"
+                href="https://wa.me/919006859138?text=Hello%20Rakesh%20Sir"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-secondary w-full sm:w-auto text-base !bg-emerald-600 !from-emerald-600 !to-green-700 !text-white !shadow-emerald-600/30"

@@ -47,16 +47,17 @@ const Home = () => {
       </div>
 
       {/* 3. Why Choose Sarthak Institute */}
+      {/* 3. Why Choose Sarthak Institute (Motion Kota Style Cards) */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <span className="text-xs font-extrabold tracking-widest text-primary-600 dark:text-primary-400 uppercase">
-            WHY CHOOSE US
+          <span className="inline-block px-3 py-1 rounded-full bg-yellow-400/15 border border-yellow-400/40 text-amber-600 dark:text-yellow-400 text-xs font-black uppercase tracking-widest">
+            ★ WHY SARTHAK INSTITUTE
           </span>
-          <h2 className="text-3xl sm:text-5xl font-serif font-extrabold text-slate-900 dark:text-white mt-2">
-            Built on Rigor, Mentored by Experts
+          <h2 className="text-3xl sm:text-5xl font-extrabold text-slate-900 dark:text-white mt-3">
+            Ratne Se Mukti • <span className="text-blue-600 dark:text-yellow-400">Concept Se Safalta</span>
           </h2>
-          <p className="text-slate-600 dark:text-slate-300 mt-4 text-sm sm:text-base">
-            We don't just teach the syllabus — we develop mathematical intuition, scientific temperament, and exam-cracking confidence for Class 10, 11 &amp; 12.
+          <p className="text-slate-600 dark:text-slate-300 mt-4 text-sm sm:text-base font-normal">
+            Bihar Board 10th (All Subjects) aur 11th-12th (Physics &amp; Chemistry) ke liye ek hi Sir dwara sabse behtareen margdarshan.
           </p>
         </div>
 
@@ -64,16 +65,16 @@ const Home = () => {
           {ACHIEVEMENTS_DATA.map((item, idx) => (
             <div
               key={idx}
-              className="glass-card p-6 flex flex-col justify-between hover:border-primary-500/40 transition-all"
+              className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 border-t-4 border-t-yellow-400 p-6 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1.5 transition-all flex flex-col justify-between group"
             >
-              <div className="w-12 h-12 rounded-2xl bg-primary-50 dark:bg-primary-950/70 text-primary-600 dark:text-primary-400 flex items-center justify-center mb-4">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-900 to-indigo-900 text-yellow-400 flex items-center justify-center mb-4 shadow-sm group-hover:scale-110 transition-transform">
                 <Trophy className="w-6 h-6" />
               </div>
               <div>
-                <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-2">
+                <h3 className="text-lg font-extrabold text-slate-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-yellow-400 transition-colors">
                   {item.title}
                 </h3>
-                <p className="text-sm text-slate-600 dark:text-slate-400">
+                <p className="text-sm text-slate-600 dark:text-slate-400 font-normal">
                   {item.desc}
                 </p>
               </div>
@@ -113,23 +114,32 @@ const Home = () => {
         </div>
       </section>
 
-      {/* 4. Rakesh Sir Profile (Founder & Lead Mentor) */}
+      {/* 4. Rakesh Sir Profile (Founder & Lead Mentor - Motion Kota NV Sir Style Banner) */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="glass-card p-8 sm:p-12 overflow-hidden relative">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <div className="rounded-3xl bg-gradient-to-br from-slate-900 via-blue-950 to-slate-950 p-8 sm:p-12 overflow-hidden relative text-white shadow-2xl border-2 border-yellow-500/30">
+          {/* Accent light */}
+          <div className="absolute -top-24 -right-24 w-96 h-96 bg-yellow-500/10 rounded-full blur-3xl pointer-events-none" />
+          
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center relative z-10">
             <div className="lg:col-span-4">
               <div className="relative mx-auto max-w-xs lg:max-w-none">
-                <img
-                  src={FACULTY_LEAD.photo}
-                  alt={FACULTY_LEAD.name}
-                  className="w-full aspect-[4/5] object-cover rounded-2xl shadow-xl"
-                />
-                <div className="absolute -bottom-4 left-4 right-4 bg-white dark:bg-slate-800 p-4 rounded-xl shadow-lg border border-slate-200 dark:border-slate-700 text-center">
-                  <div className="font-extrabold text-slate-900 dark:text-white text-base">
-                    {FACULTY_LEAD.name}
-                  </div>
-                  <div className="text-xs text-primary-600 dark:text-primary-400 font-semibold">
-                    {FACULTY_LEAD.role}
+                <div className="rounded-2xl overflow-hidden border-2 border-yellow-400/40 shadow-2xl bg-slate-950 aspect-[4/5] relative">
+                  <img
+                    src={FACULTY_LEAD.photo}
+                    alt={FACULTY_LEAD.name}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent" />
+                  <div className="absolute bottom-4 left-4 right-4 text-center">
+                    <span className="inline-block px-2.5 py-0.5 rounded bg-yellow-400 text-slate-950 text-[10px] font-black uppercase mb-1">
+                      SOLO EXPERT FACULTY
+                    </span>
+                    <div className="font-black text-white text-xl">
+                      {FACULTY_LEAD.name}
+                    </div>
+                    <div className="text-xs text-yellow-300 font-semibold">
+                      {FACULTY_LEAD.role}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -137,36 +147,39 @@ const Home = () => {
 
             <div className="lg:col-span-8 space-y-6">
               <div>
-                <span className="text-xs font-extrabold tracking-widest text-primary-600 dark:text-primary-400 uppercase">
-                  FOUNDER &amp; MENTORSHIP
+                <span className="inline-block px-3 py-1 rounded-full bg-yellow-400/15 border border-yellow-400/40 text-yellow-300 text-xs font-black uppercase tracking-widest">
+                  ★ FOUNDER &amp; CHIEF MENTOR
                 </span>
-                <h2 className="text-3xl sm:text-5xl font-serif font-extrabold text-slate-900 dark:text-white mt-2">
-                  Rakesh Sir — Ek Hi Sir Jo Banate Hain Concept Aasan
+                <h2 className="text-3xl sm:text-5xl font-extrabold text-white mt-3 leading-tight">
+                  {FACULTY_LEAD.name} — <span className="text-yellow-400">Ek Hi Sir Jo Banate Hain Concept Aasan</span>
                 </h2>
-                <div className="text-sm font-semibold text-secondary-600 dark:text-secondary-400 mt-1">
+                <div className="text-sm font-bold text-blue-200 mt-2">
                   {FACULTY_LEAD.qualification} • {FACULTY_LEAD.experience}
                 </div>
               </div>
 
-              <p className="text-slate-600 dark:text-slate-300 text-base leading-relaxed">
+              <p className="text-slate-200 text-base leading-relaxed font-normal">
                 {FACULTY_LEAD.bio}
               </p>
 
-              <div className="grid grid-cols-3 gap-6 pt-4 border-t border-slate-200 dark:border-slate-800">
+              <div className="grid grid-cols-3 gap-6 pt-6 border-t border-blue-900/60">
                 {FACULTY_LEAD.stats.map((stat, idx) => (
-                  <div key={idx}>
-                    <div className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">
+                  <div key={idx} className="p-3 rounded-xl bg-slate-900/80 border border-blue-800/40 text-center sm:text-left">
+                    <div className="text-2xl sm:text-3xl font-black text-yellow-400">
                       {stat.value}
                     </div>
-                    <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider">
+                    <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mt-1">
                       {stat.label}
                     </div>
                   </div>
                 ))}
               </div>
 
-              <div className="pt-2 flex flex-wrap gap-4">
-                <Link to="/about" className="btn-primary text-sm">
+              <div className="pt-3 flex flex-wrap gap-4">
+                <Link
+                  to="/about"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-yellow-400 to-amber-500 hover:from-yellow-300 hover:to-amber-400 text-slate-950 text-sm font-extrabold rounded-xl shadow-lg shadow-yellow-500/25 transition-all"
+                >
                   <span>Rakesh Sir ke baare me jaane</span>
                   <ArrowRight className="w-4 h-4" />
                 </Link>
@@ -174,9 +187,9 @@ const Home = () => {
                   href="https://www.youtube.com/@sarthakinstitute6303"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-outline text-sm border-red-500/40 text-red-500 hover:bg-red-50 dark:hover:bg-red-950/20"
+                  className="inline-flex items-center gap-2 px-6 py-3 border-2 border-red-500 hover:bg-red-600 text-red-400 hover:text-white text-sm font-bold rounded-xl transition-all"
                 >
-                  <span>🔴 Watch on YouTube (866+ Videos)</span>
+                  <span>▶ Watch on YouTube (866+ Videos)</span>
                 </a>
               </div>
             </div>
@@ -330,32 +343,32 @@ const Home = () => {
         </div>
       </section>
 
-      {/* 8. Contact Section & Admissions Hotline Banner */}
+      {/* 8. Contact Section & Admissions Hotline Banner (Motion Kota Yellow Theme) */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="rounded-3xl bg-gradient-to-r from-primary-600 via-indigo-700 to-primary-900 p-8 sm:p-12 text-white shadow-xl relative overflow-hidden">
+        <div className="rounded-3xl bg-gradient-to-r from-yellow-400 via-amber-400 to-yellow-500 p-8 sm:p-12 text-slate-950 shadow-2xl relative overflow-hidden border-2 border-yellow-300">
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            <div className="lg:col-span-8 space-y-4">
-              <span className="text-xs font-extrabold tracking-widest text-secondary-300 uppercase">
-                ENROLL FOR ACADEMIC SESSION 2026–27
+            <div className="lg:col-span-8 space-y-3">
+              <span className="inline-block px-3 py-1 rounded bg-slate-950 text-yellow-300 text-xs font-black uppercase tracking-wider">
+                ★ ENROLL FOR ACADEMIC SESSION 2026–27
               </span>
-              <h2 className="text-3xl sm:text-5xl font-serif font-extrabold leading-tight">
+              <h2 className="text-3xl sm:text-5xl font-extrabold leading-tight text-slate-950">
                 Ready to Secure Your Seat at Sarthak Institute?
               </h2>
-              <p className="text-slate-200 text-sm sm:text-base max-w-xl">
-                Contact our admission counselors today for a free career guidance consultation and scholarship assessment test.
+              <p className="text-slate-900 text-base font-semibold max-w-xl">
+                Contact our admission counselor today for a free career guidance consultation and scholarship test registration!
               </p>
             </div>
 
             <div className="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-4">
               <Link
                 to="/fee-structure"
-                className="btn-secondary text-center font-extrabold"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-slate-950 hover:bg-slate-800 text-white font-extrabold shadow-lg transition-all text-center"
               >
                 <span>View Fee Structure</span>
               </Link>
               <a
                 href={`tel:${INSTITUTE_PHONE}`}
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold transition-colors"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-white/60 hover:bg-white border-2 border-slate-950 text-slate-950 font-extrabold transition-colors"
               >
                 <PhoneCall className="w-4 h-4" />
                 <span>Call Admissions: {INSTITUTE_PHONE}</span>

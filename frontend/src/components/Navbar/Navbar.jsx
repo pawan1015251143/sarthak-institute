@@ -51,20 +51,22 @@ const Navbar = () => {
           : 'bg-white dark:bg-slate-900 border-b border-slate-100 dark:border-slate-800/40'
       }`}
     >
-      {/* Top Banner for Admissions Open */}
-      <div className="bg-gradient-to-r from-primary-700 via-primary-600 to-accent-600 text-white text-xs py-1.5 px-4 font-medium">
+      {/* Motion Kota Style Top Announcement Banner */}
+      <div className="bg-gradient-to-r from-yellow-400 via-amber-400 to-yellow-400 text-slate-950 text-xs sm:text-sm py-2 px-4 font-extrabold shadow-sm">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Sparkles className="w-3.5 h-3.5 text-secondary-400 animate-pulse" />
+            <span className="px-2 py-0.5 bg-slate-950 text-yellow-300 rounded text-[10px] uppercase font-black">
+              NEW
+            </span>
             <span>
-              <strong>Admissions Open 2026-27:</strong> Class 10 Bihar Board • Class 11-12 Physics &amp; Chemistry
+              Admissions Open 2026-27 • Special Scholarship Test Up To 90% • By Rakesh Sir
             </span>
           </div>
           <Link
             to="/courses"
-            className="hidden sm:inline-block underline font-bold hover:text-secondary-300 transition-colors"
+            className="hidden sm:inline-flex items-center gap-1 px-3 py-0.5 rounded-full bg-slate-950 text-white hover:bg-slate-800 transition-colors text-xs font-bold"
           >
-            Apply Now &rarr;
+            Apply Online &rarr;
           </Link>
         </div>
       </div>

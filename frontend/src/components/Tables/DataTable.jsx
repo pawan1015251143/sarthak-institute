@@ -11,8 +11,8 @@ const DataTable = ({
 
   const filteredData = data.filter((row) => {
     if (!searchTerm) return true;
-    const value = row[searchKey] || '';
-    return value.toString().toLowerCase().includes(searchTerm.toLowerCase());
+    const value = String(row?.[searchKey] || '');
+    return value.toLowerCase().includes(searchTerm.toLowerCase());
   });
 
   return (

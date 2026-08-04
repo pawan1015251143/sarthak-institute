@@ -55,8 +55,8 @@ const Notes = () => {
         return false;
       if (
         searchQuery &&
-        !note.title.toLowerCase().includes(searchQuery.toLowerCase()) &&
-        !note.chapter.toLowerCase().includes(searchQuery.toLowerCase())
+        !(note.title || '').toString().toLowerCase().includes(searchQuery.toLowerCase()) &&
+        !(note.chapter || '').toString().toLowerCase().includes(searchQuery.toLowerCase())
       )
         return false;
       return true;

@@ -5,43 +5,51 @@ const UserContext = createContext();
 
 export const UserProvider = ({ children }) => {
   const [payments, setPayments] = useState(() => {
-    const saved = localStorage.getItem('sarthak_payments');
-    return saved
-      ? JSON.parse(saved)
-      : [
-          {
-            receiptNo: "REC-2026-834912",
-            paymentId: "PAY_9K2L8X1M0Q",
-            studentName: SAMPLE_STUDENT.name,
-            studentId: SAMPLE_STUDENT.studentId,
-            classLevel: SAMPLE_STUDENT.classLevel,
-            courseName: SAMPLE_STUDENT.courseName,
-            feeType: "Yearly",
-            amount: 40000,
-            paymentMethod: "UPI",
-            transactionDate: "2026-07-05T14:22:00",
-            status: "Paid",
-          },
-        ];
+    try {
+      const saved = localStorage.getItem('sarthak_payments');
+      const parsed = saved ? JSON.parse(saved) : null;
+      if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+    } catch {
+      // ignore storage parse errors
+    }
+    return [
+      {
+        receiptNo: "REC-2026-834912",
+        paymentId: "PAY_9K2L8X1M0Q",
+        studentName: SAMPLE_STUDENT.name,
+        studentId: SAMPLE_STUDENT.studentId,
+        classLevel: SAMPLE_STUDENT.classLevel,
+        courseName: SAMPLE_STUDENT.courseName,
+        feeType: "Yearly",
+        amount: 40000,
+        paymentMethod: "UPI",
+        transactionDate: "2026-07-05T14:22:00",
+        status: "Paid",
+      },
+    ];
   });
 
   const [testAttempts, setTestAttempts] = useState(() => {
-    const saved = localStorage.getItem('sarthak_test_attempts');
-    return saved
-      ? JSON.parse(saved)
-      : [
-          {
-            testId: "test-101",
-            testTitle: "Class 12 Mathematics - Matrices & Determinants Mega Test",
-            score: 4.75,
-            totalMarks: 5,
-            percentage: 95,
-            rank: 2,
-            attemptDate: "2026-07-22T10:15:00",
-            correctCount: 5,
-            wrongCount: 0,
-          },
-        ];
+    try {
+      const saved = localStorage.getItem('sarthak_test_attempts');
+      const parsed = saved ? JSON.parse(saved) : null;
+      if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+    } catch {
+      // ignore storage parse errors
+    }
+    return [
+      {
+        testId: "test-101",
+        testTitle: "Class 12 Mathematics - Matrices & Determinants Mega Test",
+        score: 4.75,
+        totalMarks: 5,
+        percentage: 95,
+        rank: 2,
+        attemptDate: "2026-07-22T10:15:00",
+        correctCount: 5,
+        wrongCount: 0,
+      },
+    ];
   });
 
   const [notes, setNotes] = useState(SAMPLE_NOTES);

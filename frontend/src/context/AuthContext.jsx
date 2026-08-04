@@ -5,40 +5,58 @@ const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(() => {
-    const saved = localStorage.getItem('sarthak_user');
-    return saved ? JSON.parse(saved) : null;
+    try {
+      const saved = localStorage.getItem('sarthak_user');
+      return saved ? JSON.parse(saved) : null;
+    } catch {
+      return null;
+    }
   });
 
   const [role, setRole] = useState(() => {
-    return localStorage.getItem('sarthak_role') || null;
+    try {
+      return localStorage.getItem('sarthak_role') || null;
+    } catch {
+      return null;
+    }
   });
 
   const [allStudents, setAllStudents] = useState(() => {
-    const saved = localStorage.getItem('sarthak_all_students');
-    return saved ? JSON.parse(saved) : [SAMPLE_STUDENT];
+    try {
+      const saved = localStorage.getItem('sarthak_all_students');
+      const parsed = saved ? JSON.parse(saved) : [SAMPLE_STUDENT];
+      return Array.isArray(parsed) && parsed.length > 0 ? parsed : [SAMPLE_STUDENT];
+    } catch {
+      return [SAMPLE_STUDENT];
+    }
   });
 
   useEffect(() => {
-    if (user) {
-      localStorage.setItem('sarthak_user', JSON.stringify(user));
-    } else {
-      localStorage.removeItem('sarthak_user');
+    try {
+      if (user) {
+        localStorage.setItem('sarthak_user', JSON.stringify(user));
+      } else {
+        localStorage.removeItem('sarthak_user');
+      }
+      if (role) {
+        localStorage.setItem('sarthak_role', role);
+      } else {
+        localStorage.removeItem('sarthak_role');
+      }
+      localStorage.setItem('sarthak_all_students', JSON.stringify(allStudents));
+    } catch {
+      // ignore storage errors
     }
-    if (role) {
-      localStorage.setItem('sarthak_role', role);
-    } else {
-      localStorage.removeItem('sarthak_role');
-    }
-    localStorage.setItem('sarthak_all_students', JSON.stringify(allStudents));
   }, [user, role, allStudents]);
 
   const login = async (studentId, password) => {
     // In full deployment, this calls API. With demo fallback:
+    const safeId = String(studentId || '');
     const student = allStudents.find(
-      (s) => s.studentId.toLowerCase() === studentId.toLowerCase()
+      (s) => String(s?.studentId || '').toLowerCase() === safeId.toLowerCase()
     ) || {
       ...SAMPLE_STUDENT,
-      studentId: studentId.toUpperCase(),
+      studentId: safeId.toUpperCase(),
       name: "Arjun Verma",
     };
 

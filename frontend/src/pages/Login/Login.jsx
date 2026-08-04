@@ -57,8 +57,8 @@ const Login = () => {
       <div className="w-full max-w-md space-y-8">
         {/* Top Logo */}
         <div className="text-center">
-          <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary-600 to-indigo-700 flex items-center justify-center text-white mx-auto shadow-xl">
-            <GraduationCap className="w-9 h-9" />
+          <div className="w-20 h-20 rounded-2xl overflow-hidden bg-white shadow-xl mx-auto border border-slate-200 dark:border-slate-800 flex items-center justify-center">
+            <img src="/logo.jpg" alt="Sarthak Institute Logo" className="w-full h-full object-cover" />
           </div>
           <h1 className="text-3xl font-extrabold text-slate-900 dark:text-white mt-4">
             Student Portal Login

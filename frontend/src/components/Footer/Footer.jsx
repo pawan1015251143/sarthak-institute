@@ -26,15 +26,15 @@ const Footer = () => {
           {/* Col 1: Brand info */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary-500 to-indigo-600 flex items-center justify-center text-white">
-                <GraduationCap className="w-6 h-6" />
+              <div className="w-11 h-11 rounded-xl overflow-hidden bg-white shadow-md flex items-center justify-center">
+                <img src="/logo.jpg" alt="Sarthak Institute Logo" className="w-full h-full object-cover" />
               </div>
               <div>
                 <span className="text-2xl font-serif font-black tracking-tight text-white">
                   {INSTITUTE_NAME}
                 </span>
                 <span className="text-xs block font-bold tracking-widest text-secondary-400 uppercase">
-                  Class 10 • 11 • 12
+                  Learn • Grow • Succeed
                 </span>
               </div>
             </Link>

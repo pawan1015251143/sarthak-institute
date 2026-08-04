@@ -75,8 +75,8 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-18 py-3">
           {/* Brand Logo */}
           <Link to="/" className="flex items-center gap-3 group">
-            <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-primary-600 to-accent-600 flex items-center justify-center text-white shadow-md shadow-primary-500/20 group-hover:scale-105 transition-transform duration-200">
-              <GraduationCap className="w-6 h-6" />
+            <div className="w-12 h-12 rounded-xl overflow-hidden bg-white shadow-md border border-slate-200/80 dark:border-slate-800 flex items-center justify-center group-hover:scale-105 transition-transform duration-200">
+              <img src="/logo.jpg" alt="Sarthak Institute Logo" className="w-full h-full object-cover" />
             </div>
             <div>
               <div className="flex items-center gap-1.5">
@@ -88,7 +88,7 @@ const Navbar = () => {
                 </span>
               </div>
               <p className="text-[10px] font-bold tracking-widest text-slate-500 dark:text-slate-400 uppercase -mt-1">
-                EXCELLENCE IN EDUCATION
+                Learn • Grow • Succeed
               </p>
             </div>
           </Link>

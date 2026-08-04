@@ -61,8 +61,8 @@ const Sidebar = ({ isAdmin = false }) => {
       <div>
         {/* Brand Header */}
         <div className="flex items-center gap-3 px-2 mb-8">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary-600 to-indigo-700 flex items-center justify-center text-white shadow-md">
-            <GraduationCap className="w-6 h-6" />
+          <div className="w-10 h-10 rounded-xl overflow-hidden bg-white shadow-md border border-slate-200/80 dark:border-slate-800 flex items-center justify-center">
+            <img src="/logo.jpg" alt="Sarthak Institute Logo" className="w-full h-full object-cover" />
           </div>
           <div>
             <div className="font-extrabold text-base tracking-tight text-slate-900 dark:text-white">

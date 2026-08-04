@@ -16,7 +16,7 @@ const AdminLogin = () => {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
-  const { login } = useAuth();
+  const { adminLogin, login } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -28,7 +28,9 @@ const AdminLogin = () => {
     setLoading(true);
 
     try {
-      const res = await login(adminId, password, true);
+      const res = adminLogin
+        ? await adminLogin(adminId, password)
+        : await login(adminId, password, true);
       if (res.success) {
         navigate(from, { replace: true });
       } else {

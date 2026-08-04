@@ -49,9 +49,22 @@ export const AuthProvider = ({ children }) => {
     }
   }, [user, role, allStudents]);
 
-  const login = async (studentId, password) => {
-    // In full deployment, this calls API. With demo fallback:
-    const safeId = String(studentId || '');
+  const adminLogin = async (email, password) => {
+    const adminUser = {
+      name: "Rakesh Sir (Admin)",
+      email: email || "ADMIN_RAKESH",
+      role: "ADMIN",
+    };
+    setUser(adminUser);
+    setRole('ADMIN');
+    return { success: true, user: adminUser };
+  };
+
+  const login = async (studentId, password, isAdmin = false) => {
+    const safeId = String(studentId || '').trim();
+    if (isAdmin || safeId.toUpperCase().includes('ADMIN') || safeId === 'ADMIN_RAKESH') {
+      return adminLogin(safeId, password);
+    }
     const student = allStudents.find(
       (s) => String(s?.studentId || '').toLowerCase() === safeId.toLowerCase()
     ) || {
@@ -65,16 +78,6 @@ export const AuthProvider = ({ children }) => {
     return { success: true, user: student };
   };
 
-  const adminLogin = async (email, password) => {
-    const adminUser = {
-      name: "Rakesh Sir (Admin)",
-      email: email,
-      role: "ADMIN",
-    };
-    setUser(adminUser);
-    setRole('ADMIN');
-    return { success: true, user: adminUser };
-  };
 
   const logout = () => {
     setUser(null);

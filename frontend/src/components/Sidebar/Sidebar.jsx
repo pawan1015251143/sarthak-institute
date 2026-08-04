@@ -26,7 +26,7 @@ const Sidebar = ({ isAdmin = false }) => {
   const { user, logout } = useAuth();
 
   const studentNav = [
-    { name: 'Dashboard', path: '/student/dashboard', icon: LayoutDashboard },
+    { name: 'Dashboard', path: '/student-dashboard', icon: LayoutDashboard },
     { name: 'My Profile', path: '/profile', icon: User },
     { name: 'Attendance', path: '/attendance', icon: CheckSquare },
     { name: 'Fee & Payments', path: '/payment-history', icon: CreditCard },

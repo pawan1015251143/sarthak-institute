@@ -115,7 +115,7 @@ const Navbar = () => {
             {/* Login / Dashboard CTA */}
             {user ? (
               <Link
-                to={role === 'ADMIN' ? '/admin/dashboard' : '/student/dashboard'}
+                to={role === 'ADMIN' ? '/admin/dashboard' : '/student-dashboard'}
                 className="btn-primary py-2.5 px-5 text-sm"
               >
                 <LayoutDashboard className="w-4 h-4" />
@@ -166,7 +166,7 @@ const Navbar = () => {
           <div className="pt-3 border-t border-slate-200 dark:border-slate-800">
             {user ? (
               <Link
-                to={role === 'ADMIN' ? '/admin/dashboard' : '/student/dashboard'}
+                to={role === 'ADMIN' ? '/admin/dashboard' : '/student-dashboard'}
                 onClick={() => setMobileMenuOpen(false)}
                 className="btn-primary w-full py-3"
               >

@@ -69,6 +69,9 @@ const AppRoutes = () => {
         }
       >
         <Route path="/student-dashboard" element={<StudentDashboard />} />
+        <Route path="/student/dashboard" element={<StudentDashboard />} />
+        <Route path="/student" element={<StudentDashboard />} />
+        <Route path="/dashboard" element={<StudentDashboard />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/payment" element={<Payment />} />
         <Route path="/payment-history" element={<PaymentHistory />} />

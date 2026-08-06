@@ -58,7 +58,7 @@ export const FACULTY_LEAD = {
   name: "Rakesh Sir",
   role: "Founder & Sole Faculty — 10th All Subjects | 11th-12th Phy & Che",
   experience: "15+ Years Teaching Experience",
-  qualification: "M.Sc. (Physics & Chemistry), B.Ed.",
+  qualification: "M.Sc. (Chemistry), B.Ed.",
   bio: "Rakesh Sir apne simple aur practical padhane ke tareeke ke liye jaane jaate hain. 10th Bihar Board ke sabhi subjects (All Subjects) aur 11th-12th ke Physics & Chemistry ko ratne ke bajay concept se samjhate hain. YouTube channel (@sarthakinstitute6303) par 25 Lakh+ views aur 5.31K+ students jude hue hain.",
   stats: [
     { label: "YouTube Views", value: "25 Lakh+" },

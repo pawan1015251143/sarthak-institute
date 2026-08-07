@@ -193,7 +193,7 @@ const Footer = () => {
               <div>
                 <span>{INSTITUTE_ADDRESS}</span>
                 <a
-                  href="https://maps.app.goo.gl/RstJzvbHaQmLX3qMA"
+                  href="https://maps.app.goo.gl/xQveq6fmWYm39rBJA"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block text-xs text-primary-400 font-bold hover:underline mt-1"

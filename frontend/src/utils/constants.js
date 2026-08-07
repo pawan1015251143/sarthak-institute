@@ -3,7 +3,7 @@ export const INSTITUTE_TAGLINE = "Bihar Board 10th (All Subjects) aur 11th - 12t
 export const INSTITUTE_PHONE = "+91 9006859138";
 export const INSTITUTE_WHATSAPP = "9006859138";
 export const INSTITUTE_EMAIL = "contact@sarthakinstitute.edu.in";
-export const INSTITUTE_ADDRESS = "Sarthak Institute, Near Coaching Center, Bihar (Google Maps: https://maps.app.goo.gl/RstJzvbHaQmLX3qMA)";
+export const INSTITUTE_ADDRESS = "Sarthak Institute, Near Coaching Center, Bihar (Google Maps: https://maps.app.goo.gl/xQveq6fmWYm39rBJA)";
 export const INSTITUTE_YOUTUBE = "https://www.youtube.com/@sarthakinstitute6303";
 
 export const COURSES_DATA = [

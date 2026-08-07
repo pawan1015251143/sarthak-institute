@@ -34,8 +34,7 @@ const Navbar = () => {
     { name: 'About', path: '/about' },
     { name: 'Courses', path: '/courses' },
     { name: 'Fee Structure', path: '/fee-structure' },
-    { name: 'Notes', path: '/notes' },
-    { name: 'Online Test', path: '/online-test' },
+
     { name: 'Results', path: '/results' },
     { name: 'Gallery', path: '/gallery' },
     { name: 'Contact', path: '/contact' },

@@ -106,24 +106,7 @@ const Footer = () => {
                   Fee Structure
                 </Link>
               </li>
-              <li>
-                <Link
-                  to="/notes"
-                  className="hover:text-primary-400 transition-colors flex items-center gap-2"
-                >
-                  <ArrowRight className="w-3.5 h-3.5 text-primary-500" />
-                  Study Notes
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/online-test"
-                  className="hover:text-primary-400 transition-colors flex items-center gap-2"
-                >
-                  <ArrowRight className="w-3.5 h-3.5 text-primary-500" />
-                  Online MCQ Tests
-                </Link>
-              </li>
+
               <li>
                 <Link
                   to="/results"

@@ -26,6 +26,30 @@ let mockGallery = [
     category: 'Classrooms',
     url: '/images/gallery/class4.jpg',
   },
+  {
+    id: 5,
+    title: 'Annual Prize Distribution 2025',
+    category: 'Events',
+    url: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 6,
+    title: 'Teachers Day Celebration',
+    category: 'Events',
+    url: 'https://images.unsplash.com/photo-1511629091441-ee46146481b6?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 7,
+    title: 'Modern Library for Self Study',
+    category: 'Facilities',
+    url: 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 8,
+    title: '100% Board Pass Rate Award',
+    category: 'Achievements',
+    url: 'https://images.unsplash.com/photo-1531315630201-bb15abeb1653?auto=format&fit=crop&w=800&q=80',
+  }
 ];
 
 // GET /api/gallery

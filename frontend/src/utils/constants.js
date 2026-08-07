@@ -178,6 +178,42 @@ export const GALLERY_PREVIEW_DATA = [
     category: "Classroom",
     image: "/images/gallery/class4.jpg",
   },
+  {
+    id: "g5",
+    title: "Annual Prize Distribution Ceremony",
+    category: "Events",
+    image: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=800&q=80",
+  },
+  {
+    id: "g6",
+    title: "Republic Day Celebration",
+    category: "Events",
+    image: "https://images.unsplash.com/photo-1511629091441-ee46146481b6?auto=format&fit=crop&w=800&q=80",
+  },
+  {
+    id: "g7",
+    title: "Modern Reading & Library Corner",
+    category: "Facilities",
+    image: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=800&q=80",
+  },
+  {
+    id: "g8",
+    title: "Computerized Online Testing Lab",
+    category: "Facilities",
+    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80",
+  },
+  {
+    id: "g9",
+    title: "State Board Toppers Felicitation",
+    category: "Achievements",
+    image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80",
+  },
+  {
+    id: "g10",
+    title: "100% Result Award Trophy",
+    category: "Achievements",
+    image: "https://images.unsplash.com/photo-1531315630201-bb15abeb1653?auto=format&fit=crop&w=800&q=80",
+  }
 ];
 
 export const SAMPLE_STUDENT = {

@@ -65,7 +65,7 @@ export const FACULTY_LEAD = {
     { label: "Subscribers", value: "5.31K+" },
     { label: "Free Lectures", value: "866+" },
   ],
-  photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC87RuPVghHFi9g5IuR498zuuYSjzFBIngO70nTpqMJ_T8FyeLLx-6vrVh&s=10",
+  photo: "/images/faculty/rakesh-sir.jpg",
 };
 
 export const TESTIMONIALS_DATA = [

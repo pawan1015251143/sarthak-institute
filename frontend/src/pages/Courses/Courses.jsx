@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import useSEO from '../../hooks/useSEO';
 import { Link } from 'react-router-dom';
 import CourseCard from '../../components/Cards/CourseCard';
 import Modal from '../../components/Modal/Modal';
@@ -15,6 +16,12 @@ import {
 } from 'lucide-react';
 
 const Courses = () => {
+  useSEO({
+    title: 'Courses',
+    description: 'Explore our comprehensive courses for Class 10 (All Subjects), Class 11 & 12 (Physics & Chemistry) with expertly crafted study material.',
+    path: '/courses'
+  });
+
   const [selectedClass, setSelectedClass] = useState('All');
   const [selectedCourse, setSelectedCourse] = useState(null);
 

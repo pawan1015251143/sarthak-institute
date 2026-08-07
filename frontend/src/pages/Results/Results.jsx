@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import useSEO from '../../hooks/useSEO';
 import { useUser } from '../../context/UserContext';
 import { useAuth } from '../../context/AuthContext';
 import PerformanceChart from '../../components/Charts/PerformanceChart';
@@ -15,7 +16,14 @@ import {
 import { INSTITUTE_NAME, INSTITUTE_PHONE } from '../../utils/constants';
 
 const Results = () => {
+  useSEO({
+    title: 'Results & Success Stories',
+    description: 'Check out the outstanding results and success stories of Sarthak Institute students in Bihar Board Class 10th and 12th exams.',
+    path: '/results'
+  });
+
   const { user } = useAuth();
+  const [activeTab, setActiveTab] = useState('All');
   const { testAttempts } = useUser();
 
   const [selectedExam, setSelectedExam] = useState('Term 1 Board Mock Exam 2026');

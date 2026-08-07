@@ -1,4 +1,5 @@
 import React from 'react';
+import useSEO from '../../hooks/useSEO';
 import { FACULTY_LEAD, INSTITUTE_NAME } from '../../utils/constants';
 import {
   Target,
@@ -16,6 +17,12 @@ import {
 } from 'lucide-react';
 
 const About = () => {
+  useSEO({
+    title: 'About Us',
+    description: 'Learn about Sarthak Institute, our mission, vision, and the legacy of Rakesh Sir in transforming education in Lalganj, Bihar.',
+    path: '/about'
+  });
+
   const facultyTeam = [FACULTY_LEAD];
 
   const whyChooseUs = [

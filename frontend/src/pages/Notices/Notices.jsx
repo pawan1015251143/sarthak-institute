@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
+import useSEO from '../../hooks/useSEO';
 import { useUser } from '../../context/UserContext';
 import { Bell, Calendar } from 'lucide-react';
 
 const Notices = () => {
+  useSEO({
+    title: 'Notices & Updates',
+    description: 'Stay updated with the latest announcements, batch schedules, and exam news from Sarthak Institute.',
+    path: '/notices'
+  });
+
   const { notices } = useUser();
+  const [filter, setFilter] = useState('All');
 
   return (
     <div className="max-w-7xl mx-auto py-10 space-y-8">

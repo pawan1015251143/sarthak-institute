@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import useSEO from '../../hooks/useSEO';
 import { Link, useNavigate } from 'react-router-dom';
 import Hero from '../../components/Hero/Hero';
 import YouTubeSpotlight from '../../components/YouTubeSpotlight/YouTubeSpotlight';
@@ -29,6 +30,12 @@ import {
 } from 'lucide-react';
 
 const Home = () => {
+  useSEO({
+    title: 'Home',
+    description: 'Sarthak Institute - Top coaching for Class 10 (All Subjects) & 11-12 (Physics, Chemistry) in Lalganj, Bihar. Get 95%+ in Board Exams with Rakesh Sir.',
+    path: '/'
+  });
+
   const [selectedCourse, setSelectedCourse] = useState(null);
   const navigate = useNavigate();
 

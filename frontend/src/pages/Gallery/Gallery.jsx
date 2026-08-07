@@ -1,9 +1,16 @@
 import React, { useState } from 'react';
+import useSEO from '../../hooks/useSEO';
 import { GALLERY_PREVIEW_DATA } from '../../utils/constants';
 import Modal from '../../components/Modal/Modal';
 import { Eye, Image as ImageIcon } from 'lucide-react';
 
 const Gallery = () => {
+  useSEO({
+    title: 'Photo Gallery',
+    description: 'Explore the vibrant campus life, classrooms, and events at Sarthak Institute, Lalganj.',
+    path: '/gallery'
+  });
+
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [activeImage, setActiveImage] = useState(null);
 

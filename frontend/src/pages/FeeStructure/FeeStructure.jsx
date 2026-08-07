@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import useSEO from '../../hooks/useSEO';
 import { useNavigate } from 'react-router-dom';
 import Modal from '../../components/Modal/Modal';
 import { COURSES_DATA, SAMPLE_STUDENT } from '../../utils/constants';
@@ -18,6 +19,12 @@ import {
 } from 'lucide-react';
 
 const FeeStructure = () => {
+  useSEO({
+    title: 'Fee Structure',
+    description: 'Check the affordable and transparent fee structure for all courses at Sarthak Institute. Register for upcoming batches today.',
+    path: '/fee-structure'
+  });
+
   const [selectedCourse, setSelectedCourse] = useState(COURSES_DATA[0] || {}); // default Class 10 Bihar Board
   const [feeType, setFeeType] = useState('Yearly'); // 'Monthly' or 'Yearly'
   const [paymentMethod, setPaymentMethod] = useState('UPI'); // 'UPI', 'Cash', 'Bank Transfer'

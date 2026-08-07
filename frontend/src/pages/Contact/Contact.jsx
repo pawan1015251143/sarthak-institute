@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import useSEO from '../../hooks/useSEO';
 import {
   INSTITUTE_NAME,
   INSTITUTE_PHONE,
@@ -16,6 +17,12 @@ import {
 } from 'lucide-react';
 
 const Contact = () => {
+  useSEO({
+    title: 'Contact Us',
+    description: 'Get in touch with Sarthak Institute. Find our location in Lalganj, contact numbers, and admission enquiry form.',
+    path: '/contact'
+  });
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',

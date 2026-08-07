@@ -162,7 +162,7 @@ const Home = () => {
                 {FACULTY_LEAD.bio}
               </p>
 
-              <div className="grid grid-cols-3 gap-6 pt-6 border-t border-blue-900/60">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-6 border-t border-blue-900/60">
                 {FACULTY_LEAD.stats.map((stat, idx) => (
                   <div key={idx} className="p-3 rounded-xl bg-slate-900/80 border border-blue-800/40 text-center sm:text-left">
                     <div className="text-2xl sm:text-3xl font-black text-yellow-400">

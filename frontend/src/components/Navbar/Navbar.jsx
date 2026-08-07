@@ -52,12 +52,12 @@ const Navbar = () => {
     >
       {/* Motion Kota Style Top Announcement Banner */}
       <div className="bg-gradient-to-r from-yellow-400 via-amber-400 to-yellow-400 text-slate-950 text-xs sm:text-sm py-2 px-4 font-extrabold shadow-sm">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <span className="px-2 py-0.5 bg-slate-950 text-yellow-300 rounded text-[10px] uppercase font-black">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+          <div className="flex flex-col sm:flex-row items-center gap-1.5 text-center sm:text-left">
+            <span className="px-2 py-0.5 bg-slate-950 text-yellow-300 rounded text-[10px] uppercase font-black shrink-0">
               NEW
             </span>
-            <span>
+            <span className="leading-tight">
               Admissions Open 2026-27 • Special Scholarship Test Up To 90% • By Rakesh Sir
             </span>
           </div>

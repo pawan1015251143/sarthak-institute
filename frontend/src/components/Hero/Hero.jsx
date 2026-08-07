@@ -26,9 +26,9 @@ const Hero = () => {
           {/* Left Col: High Impact Motion Style Headline & CTAs */}
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
             {/* Admissions Open Pill Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-yellow-500/10 border border-yellow-400/30 text-yellow-300 text-xs sm:text-sm font-bold tracking-wide uppercase shadow-sm">
-              <Sparkles className="w-4 h-4 text-yellow-400 animate-pulse" />
-              <span>Admissions Open 2026–27 • Bihar Board 10th &amp; 11th-12th (Phy &amp; Che)</span>
+            <div className="inline-flex flex-col sm:flex-row items-center gap-2 px-4 py-2 rounded-2xl sm:rounded-full bg-yellow-500/10 border border-yellow-400/30 text-yellow-300 text-xs sm:text-sm font-bold tracking-wide uppercase shadow-sm text-center">
+              <Sparkles className="w-4 h-4 text-yellow-400 animate-pulse shrink-0" />
+              <span className="leading-tight">Admissions Open 2026–27 • Bihar Board 10th &amp; 11th-12th (Phy &amp; Che)</span>
             </div>
 
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.1] text-white">
@@ -68,7 +68,7 @@ const Hero = () => {
             </div>
 
             {/* Motion Style Highlights Bar */}
-            <div className="grid grid-cols-3 gap-4 pt-8 border-t border-blue-900/60">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-8 border-t border-blue-900/60 text-center sm:text-left">
               <div className="p-3 rounded-xl bg-slate-900/60 border border-blue-800/40">
                 <div className="text-2xl lg:text-3xl font-extrabold text-yellow-400">
                   25 Lakh+

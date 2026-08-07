@@ -156,39 +156,27 @@ export const NOTICE_BOARD_DATA = [
 export const GALLERY_PREVIEW_DATA = [
   {
     id: "g1",
-    title: "Annual Prize Distribution Ceremony 2026",
-    category: "Events",
-    image: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=800&q=80",
+    title: "Sarthak Institute Classroom 1",
+    category: "Classroom",
+    image: "/images/gallery/class1.jpg",
   },
   {
     id: "g2",
     title: "Smart Classroom Lecture by Rakesh Sir",
     category: "Classroom",
-    image: "https://i.ytimg.com/vi/oHZ0CeUt7AY/hqdefault.jpg",
+    image: "/images/gallery/class2.jpg",
   },
   {
     id: "g3",
-    title: "Computerized Online Testing Lab",
-    category: "Facilities",
-    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80",
+    title: "Students Studying in Classroom",
+    category: "Classroom",
+    image: "/images/gallery/class3.jpg",
   },
   {
     id: "g4",
-    title: "Board Toppers Felicitation with Parents",
-    category: "Achievements",
-    image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    id: "g5",
-    title: "Physics Practical Experiment Workshop",
+    title: "Sarthak Institute Classroom Batch",
     category: "Classroom",
-    image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    id: "g6",
-    title: "Student Discussion & Library Corner",
-    category: "Facilities",
-    image: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=800&q=80",
+    image: "/images/gallery/class4.jpg",
   },
 ];
 

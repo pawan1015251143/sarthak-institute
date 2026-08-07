@@ -4,27 +4,27 @@ const { pool, getIsMock } = require('../config/db');
 let mockGallery = [
   {
     id: 1,
-    title: 'Sarthak Institute Annual Prize Distribution 2025',
-    category: 'Events',
-    url: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=800&q=80',
+    title: 'Sarthak Institute Classroom 1',
+    category: 'Classrooms',
+    url: '/images/gallery/class1.jpg',
   },
   {
     id: 2,
     title: 'Smart Digital Classrooms & Interactive Board Study',
     category: 'Campus',
-    url: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80',
+    url: '/images/gallery/class2.jpg',
   },
   {
     id: 3,
-    title: 'Top 10 JEE & NEET Achievers Facilitation Ceremony',
-    category: 'Achievers',
-    url: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80',
+    title: 'Students Studying in Classroom',
+    category: 'Classrooms',
+    url: '/images/gallery/class3.jpg',
   },
   {
     id: 4,
-    title: 'Modern Chemistry & Physics Practical Laboratory',
+    title: 'Sarthak Institute Classroom Batch',
     category: 'Classrooms',
-    url: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80',
+    url: '/images/gallery/class4.jpg',
   },
 ];
 

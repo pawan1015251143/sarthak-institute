@@ -304,7 +304,7 @@ const Contact = () => {
         <div className="aspect-[16/6] w-full bg-slate-200 dark:bg-slate-900 relative flex items-center justify-center overflow-hidden">
           <iframe
             title="Sarthak Institute Map Location"
-            src="https://maps.google.com/maps?q=Sarthak%20Institute,%20Bihar&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            src="https://maps.google.com/maps?q=V59H%2BPW%20Lalganj,%20Bihar&t=&z=15&ie=UTF8&iwloc=&output=embed"
             width="100%"
             height="100%"
             style={{ border: 0 }}

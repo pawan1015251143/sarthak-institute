@@ -28,11 +28,26 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    
+    // Create WhatsApp message text
+    const textMessage = `Hello Sir, I have a new inquiry:
+*Name:* ${formData.name}
+*Mobile:* ${formData.phone}
+*Email:* ${formData.email}
+*Target Class:* ${formData.classLevel}
+*Message:* ${formData.message}`;
+
+    // Generate WhatsApp link (9006859138)
+    const whatsappUrl = `https://wa.me/919006859138?text=${encodeURIComponent(textMessage)}`;
+    
+    // Open WhatsApp in new tab
+    window.open(whatsappUrl, '_blank');
+    
     setSubmitted(true);
   };
 
-  const whatsappLink = `https://wa.me/919876543210?text=${encodeURIComponent(
-    "Hello Sarthak Institute! I would like to inquire about Class 10, 11 & 12 coaching admissions."
+  const whatsappLink = `https://wa.me/919006859138?text=${encodeURIComponent(
+    "Hello Sarthak Institute! I would like to inquire about admissions."
   )}`;
 
   return (
@@ -152,7 +167,7 @@ const Contact = () => {
               Send an Inquiry Message
             </h3>
             <p className="text-xs text-slate-500 mb-6">
-              Fill out the form below and our admission counselor will contact you within 2 hours.
+              Fill out the form below and it will open directly in Sir's WhatsApp.
             </p>
 
             {submitted ? (
@@ -161,10 +176,10 @@ const Contact = () => {
                   <CheckCircle2 className="w-7 h-7" />
                 </div>
                 <h4 className="text-xl font-bold text-slate-900 dark:text-white">
-                  Message Sent Successfully!
+                  Opening WhatsApp...
                 </h4>
                 <p className="text-sm text-slate-600 dark:text-slate-300">
-                  Thank you for contacting Sarthak Institute. Our counselor has received your inquiry for <strong>{formData.classLevel}</strong>.
+                  Please send the pre-filled message in WhatsApp to complete your inquiry for <strong>{formData.classLevel}</strong>.
                 </p>
                 <button
                   onClick={() => setSubmitted(false)}
@@ -235,13 +250,9 @@ const Contact = () => {
                       }
                       className="w-full px-3.5 py-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-primary-500"
                     >
-                      <option>Class 10 Foundation &amp; Boards</option>
-                      <option>Class 11 Science (PCM / PCB)</option>
-                      <option>Class 11 Commerce &amp; CA Foundation</option>
-                      <option>Class 11 Humanities &amp; CUET</option>
-                      <option>Class 12 Science (PCM / PCB + Boards)</option>
-                      <option>Class 12 Commerce &amp; Board Achievers</option>
-                      <option>Class 12 Humanities &amp; Premier Batch</option>
+                      <option>10th</option>
+                      <option>11th (phy, che)</option>
+                      <option>12th (phy, che)</option>
                     </select>
                   </div>
                 </div>

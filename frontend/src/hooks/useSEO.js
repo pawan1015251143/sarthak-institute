@@ -3,8 +3,8 @@ import { useEffect } from 'react';
 const useSEO = ({ title, description, path }) => {
   useEffect(() => {
     // 1. Update Title
-    const siteTitle = 'Sarthak Institute | Premier Coaching for Class 10, 11 & 12';
-    const newTitle = title ? `${title} | Sarthak Institute` : siteTitle;
+    const siteTitle = 'Sarthak Institute Lalganj | Best Coaching Institute in Lalganj, Vaishali';
+    const newTitle = title ? `${title} | Sarthak Institute Lalganj` : siteTitle;
     document.title = newTitle;
 
     // Update Open Graph and Twitter Titles
@@ -15,7 +15,7 @@ const useSEO = ({ title, description, path }) => {
     if (twitterTitle) twitterTitle.setAttribute('content', newTitle);
 
     // 2. Update Description
-    const defaultDesc = 'Sarthak Institute - Premium Coaching for Class 10, Class 11, and Class 12 Science, Commerce & Arts.';
+    const defaultDesc = 'Sarthak Institute Lalganj is a trusted coaching institute in Lalganj, Vaishali, Bihar. We provide quality education, experienced faculty, and excellent results for students.';
     const newDesc = description || defaultDesc;
 
     const metaDesc = document.querySelector('meta[name="description"]');

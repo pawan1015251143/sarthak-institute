@@ -85,7 +85,7 @@ const About = () => {
         </h1>
         <div className="text-slate-600 dark:text-slate-300 text-lg leading-relaxed space-y-4">
           <p>
-            Established with a singular goal to eradicate the fear of Board Exams, Sarthak Institute has become the most trusted name in Lalganj, Bihar for <strong>Class 10th (All Subjects)</strong> and <strong>11th-12th (Physics &amp; Chemistry)</strong>.
+            Established with a singular goal to eradicate the fear of Board Exams, Sarthak Institute Lalganj has become the most trusted coaching institute in Lalganj, Vaishali, Bihar for <strong>Class 10th (All Subjects)</strong> and <strong>11th-12th (Physics &amp; Chemistry)</strong>.
           </p>
           <p>
             We believe that true education goes beyond textbooks. Our motto <strong className="text-slate-900 dark:text-white">"Ratne Se Mukti, Concept Se Safalta"</strong> drives our teaching methodology. Instead of forcing students to memorize formulas, we focus on deep conceptual clarity, interactive doubt-solving, and rigorous testing to prepare them for both board exams and future competitive challenges.
@@ -200,7 +200,7 @@ const About = () => {
           <div className="lg:col-span-4">
             <img
               src={FACULTY_LEAD.photo}
-              alt={FACULTY_LEAD.name}
+              alt={`Rakesh Sir - Founder of Sarthak Institute Lalganj`}
               className="w-full aspect-[4/5] object-cover rounded-2xl shadow-xl"
             />
           </div>

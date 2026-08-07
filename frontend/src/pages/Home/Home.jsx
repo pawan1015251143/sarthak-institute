@@ -31,8 +31,8 @@ import {
 
 const Home = () => {
   useSEO({
-    title: 'Home',
-    description: 'Sarthak Institute - Top coaching for Class 10 (All Subjects) & 11-12 (Physics, Chemistry) in Lalganj, Bihar. Get 95%+ in Board Exams with Rakesh Sir.',
+    title: 'Sarthak Institute Lalganj | Best Coaching Institute in Lalganj, Vaishali',
+    description: 'Sarthak Institute Lalganj is a trusted coaching institute in Lalganj, Vaishali, Bihar. We provide quality education, experienced faculty, and excellent results for students.',
     path: '/'
   });
 

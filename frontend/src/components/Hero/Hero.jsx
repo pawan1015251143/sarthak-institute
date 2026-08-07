@@ -23,7 +23,7 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
         <img
           src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1920&q=80"
-          alt="Campus Background"
+          alt="Sarthak Institute Lalganj Campus Background"
           className="w-full h-full object-cover opacity-60 mix-blend-overlay"
         />
         {/* Deep dark overlay to ensure text readability */}
@@ -46,14 +46,18 @@ const Hero = () => {
             </div>
 
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.15] text-white">
-              Ratne Se Mukti, <br className="hidden sm:block" />
+              Sarthak Institute <br className="hidden sm:block" />
               <span className="bg-gradient-to-r from-yellow-400 via-amber-300 to-yellow-500 bg-clip-text text-transparent drop-shadow-sm">
-                Concept Se Safalta
+                Lalganj
               </span>
             </h1>
+            
+            <h2 className="text-2xl sm:text-3xl font-bold text-slate-200 mt-4">
+              Ratne Se Mukti, Concept Se Safalta
+            </h2>
 
-            <p className="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-medium">
-              Join Bihar's most trusted institute for <strong className="text-yellow-400">Class 10th (All Subjects)</strong> and <strong className="text-yellow-400">11th-12th (Physics &amp; Chemistry)</strong>. 
+            <p className="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-medium mt-4">
+              Join Vaishali, Bihar's most trusted institute for <strong className="text-yellow-400">Class 10th (All Subjects)</strong> and <strong className="text-yellow-400">11th-12th (Physics &amp; Chemistry)</strong>. 
               Get expertly crafted notes, regular mock tests, and personal mentoring to achieve <strong className="text-white">95%+ in Board Exams</strong>.
             </p>
 
@@ -138,7 +142,7 @@ const Hero = () => {
                 <div className="relative aspect-[4/4.5] rounded-2xl overflow-hidden mb-5 border border-slate-700/60 bg-slate-950 shadow-inner">
                   <img
                     src={FACULTY_LEAD.photo}
-                    alt={FACULTY_LEAD.name}
+                    alt={`Rakesh Sir - ${FACULTY_LEAD.name} at Sarthak Institute Lalganj`}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent" />

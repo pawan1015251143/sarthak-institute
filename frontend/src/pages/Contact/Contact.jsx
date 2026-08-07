@@ -20,7 +20,7 @@ const Contact = () => {
     name: '',
     email: '',
     phone: '',
-    classLevel: 'Class 12 Science',
+    classLevel: '10th',
     message: '',
   });
 
@@ -86,7 +86,7 @@ const Contact = () => {
                     {INSTITUTE_ADDRESS}
                   </div>
                   <a
-                    href="https://maps.app.goo.gl/DEytu3NHHUYy7E9q8"
+                    href="https://maps.app.goo.gl/RstJzvbHaQmLX3qMA"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1 text-xs font-bold text-primary-600 dark:text-primary-400 hover:underline mt-1.5"
@@ -292,7 +292,7 @@ const Contact = () => {
             <span>Campus Location: Sarthak Institute Coaching Campus</span>
           </div>
           <a
-            href="https://maps.app.goo.gl/DEytu3NHHUYy7E9q8"
+            href="https://maps.app.goo.gl/RstJzvbHaQmLX3qMA"
             target="_blank"
             rel="noopener noreferrer"
             className="text-xs font-extrabold text-primary-600 hover:underline flex items-center gap-1"
